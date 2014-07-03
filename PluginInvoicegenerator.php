@@ -64,7 +64,8 @@ class PluginInvoicegenerator extends ServicePlugin
 
         $billingGateway = new BillingGateway($this->user);
         $initial = 0;
-        $billingGateway->generate_invoice($initial);
+        $allAtOnce = true;
+        $billingGateway->generate_invoice($initial, $allAtOnce);
         if (isset($this->session->all_invoices)){
               $numCustomers = count($this->session->all_invoices);
         }
