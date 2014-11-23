@@ -23,7 +23,7 @@ class PluginInvoicegenerator extends ServicePlugin
             ),
             lang('Enabled')       => array(
                 'type'          => 'yesno',
-                'description'   => lang('When enabled, invoices will automatically be sent to your customers.'),
+                'description'   => lang('When enabled, invoices will automatically be created.'),
                 'value'         => '0',
             ),
             lang('Run schedule - Minute')  => array(
